@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/another"
+    tools:context=".ExampleActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="TOEIC PART 5 기출 문제"
+        android:textStyle="bold"
+        android:fontFamily="@font/noto"
+        android:letterSpacing="-0.1"
+        android:textColor="@color/color1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_start_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/hanguelgodic"
+        android:textColor="@color/color2"
+        android:text="Highscore: 0"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/color1"
+        android:fontFamily="@font/hanguelgodic"
+        android:letterSpacing="-0.1"
+        android:text="Start Quiz" />
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_start_quiz"
+        android:layout_alignStart="@+id/button_start_quiz"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

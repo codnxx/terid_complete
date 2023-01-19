@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/another"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:srcCompat="@drawable/teridlogo"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/notoregular"
+        android:text="TERID"
+        android:textColor="@color/color1"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="60dp"
+        android:text="Nickname"
+        android:fontFamily="@font/noto"
+        android:letterSpacing="-0.05"
+        android:textColor="@color/color1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/mypage_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="35dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Mypage"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:letterSpacing="-0.07"
+        android:text="My Plan"
+        android:textColor="@color/color1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/TodayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/textround"
+        android:text="Victory belong to the most persevering\n_ Napoleon Bonaparte"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/notoregular"
+        android:letterSpacing="-0.02"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageButton
+        android:id="@+id/engnote_page"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/buttonselector"
+        android:text="자료노트"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/dictionary_page"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/file_btn"
+        android:scaleType="fitCenter"
+        android:contentDescription="TODO"
+        android:elevation="10dp"/>
+
+    <ImageButton
+        android:id="@+id/dictionary_page"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/buttonselector"
+        android:scaleType="fitCenter"
+        android:text="단어 검색"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/dictionary_btn"
+        android:contentDescription="TODO"
+        android:elevation="10dp"/>
+
+    <ImageButton
+        android:id="@+id/example_page"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/buttonselector"
+        android:text="문제풀이"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ybm_link"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/engnote_page"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/solve_btn"
+        android:scaleType="fitCenter"
+        android:contentDescription="TODO"
+        android:elevation="10dp"/>
+
+    <ImageButton
+        android:id="@+id/ybm_link"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/buttonselector"
+        android:text="YBM연결"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dictionary_page"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/ybm_btn"
+        android:scaleType="fitCenter"
+        android:contentDescription="TODO"
+        android:elevation="10dp"/>
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/color3"
+        android:text="sign out"
+        android:fontFamily="@font/noto"
+        android:letterSpacing="-0.1"
+        android:textColor="@color/color1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
